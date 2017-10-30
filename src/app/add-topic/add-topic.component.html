@@ -1,0 +1,5 @@
+<form id="add-topic-form">
+  <label for="title">What feline topic would you like to discuss?</label>
+  <input type="text" #newTopic>
+  <button (click)="submitForm(newTopic.value); newTopic.value='';" class="btn">Add Topic</button>
+</form>
