@@ -15,7 +15,6 @@ export class TopicsComponent {
 
 
   addTopic(newTopicFromChild: Topic) {
-    console.log(newTopicFromChild);
     this.masterTopicList.push(newTopicFromChild);
   }
 }

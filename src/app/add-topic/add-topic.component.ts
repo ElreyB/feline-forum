@@ -8,11 +8,9 @@ import { Topic } from './../topic.model';
 })
 
 export class AddTopicComponent {
-@Output() newTopicSender = new EventEmitter();
-
-submitForm(title: string){
-  console.log(title);
-  let newTopicToAdd: Topic = new Topic(title);
-  this.newTopicSender.emit(newTopicToAdd);
-}
+  @Output() newTopicSender = new EventEmitter();
+  submitForm(title: string){
+    let newTopicToAdd: Topic = new Topic(title);
+    this.newTopicSender.emit(newTopicToAdd);
+  }
 }
