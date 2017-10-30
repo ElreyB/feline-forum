@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { Topic } from './../topic.model';
 
 @Component({
@@ -8,5 +8,11 @@ import { Topic } from './../topic.model';
 })
 
 export class AddTopicComponent {
-  
+@Output() newTopicSender = new EventEmitter();
+
+submitForm(title: string){
+  console.log(title);
+  let newTopicToAdd: Topic = new Topic(title);
+  this.newTopicSender.emit(newTopicToAdd);
+}
 }

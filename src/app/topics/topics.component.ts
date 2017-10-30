@@ -10,6 +10,12 @@ export class TopicsComponent {
   masterTopicList: Topic[] = [
     new Topic("Cat Care Forums"),
     new Topic("Cat Breeds, Breeding and Showing"),
-    new Topic("Feral Cats and Rescue"),
+    new Topic("Feral Cats and Rescue")
   ];
+
+
+  addTopic(newTopicFromChild: Topic) {
+    console.log(newTopicFromChild);
+    this.masterTopicList.push(newTopicFromChild);
+  }
 }
