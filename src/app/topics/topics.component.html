@@ -2,12 +2,6 @@
   <add-topic>(newTopicSender)="addTopic($event)"></add-topic>
 </div>
 
-<div *ngFor="let topic of masterTopicList" class="panel panel-default">
-  <div class="panel-heading">
-    <p>{{topic.title}}</p>
-    <button type="button" name="button">Add</button>
-  </div>
-  <div class="panel-body">
-
-  </div>
+<div *ngFor="let topic of masterTopicList" class="well">
+  <p><a routerLink="topic-forum"> {{topic.title}}</a></p>
 </div>

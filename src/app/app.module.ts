@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { TopicsComponent } from './topics/topics.component';
 import { routing } from './app.routing';
 import { AddTopicComponent } from './add-topic/add-topic.component';
+import { TopicForumComponent } from './topic-forum/topic-forum.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopicsComponent,
-    AddTopicComponent
+    AddTopicComponent,
+    TopicForumComponent
   ],
   imports: [
     BrowserModule,
